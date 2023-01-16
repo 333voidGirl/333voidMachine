@@ -1,6 +1,13 @@
+#!/bin/sh
+
+#clock
 while true; do
-   xsetroot -name "$( date +"%F %R" )"
-   sleep 1m    # Update time every minute
+   xsetroot -name "| $( date +"%A %B %d, %Y; %r" ) | (:) |"
+   sleep 1    # Update time every second
 done &
+
+#autostart
+cadence-session-start --system-start &
+
+#DWM
 exec dwm
-exec cadence-session-start -s
