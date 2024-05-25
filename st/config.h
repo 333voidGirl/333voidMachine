@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
+static char *font = "monospace:pixelsize=12:antialias=false";
 static int borderpx = 2;
 
 /*
@@ -102,17 +102,17 @@ static const char *colorname[] = {
 	"#a3ff00",
 	"blue3",
 	"magenta3",
-	"#6800ff",
-	"#ff7e00",
+	"#d15cff",
+	"#9000ff",
 
 	/* 8 bright colors */
 	"gray50",
 	"#ff7e00",
-	"#f20587",
+	"#8d2fff",
 	"#08ff00",
 	"#0000ff",
 	"magenta",
-	"#9000ff",
+	"#ff7e00",
 	"white",
 
 	[255] = 0,

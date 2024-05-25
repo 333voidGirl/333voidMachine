@@ -7,7 +7,10 @@
 
 alias ls='ls --color=auto'
 alias lf='lfrun'
-alias ss="sh ~/.scripts/screenie.sh"
+alias scr="sh ~/.scripts/screenie/scr"
+alias scra="sh ~/.scripts/screenie/actwin"
+alias ss="sh ~/.scripts/screenie/sel"
+alias neof="neofetch --source ~/.ascii/bat8"
 
 # pnpm
 export PNPM_HOME="/home/n1l/.local/share/pnpm"
