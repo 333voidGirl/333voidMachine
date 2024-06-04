@@ -55,7 +55,7 @@ bindsym $mod+Return exec kitty
 bindsym $mod+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+s exec dmenu_run -nb '#000000' -nf '#f20587' -sf '#000000' -sb '#9000ff' -fn 'IBM3270-10px'
+bindsym $mod+d exec dmenu_run -nb '#000000' -nf '#f20587' -sf '#000000' -sb '#9000ff' -fn 'IBM3270-10px'
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
@@ -63,10 +63,10 @@ bindsym $mod+s exec dmenu_run -nb '#000000' -nf '#f20587' -sf '#000000' -sb '#90
 # bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
 
 # change focus
-# bindsym $mod+j focus left
-# bindsym $mod+k focus down
-# bindsym $mod+l focus up
-# bindsym $mod+semicolon focus right
+bindsym $mod+j focus left
+bindsym $mod+k focus down
+bindsym $mod+l focus up
+bindsym $mod+semicolon focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -93,10 +93,10 @@ bindsym $mod+h split h
 bindsym $mod+v split v
 
 # enter fullscreen mode for the focused container
-bindsym $mod+Shift+f fullscreen toggle
+bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-# bindsym $mod+s layout stacking
+#bindsym $mod_s layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
@@ -108,12 +108,6 @@ bindsym $mod+space focus mode_toggle
 
 # focus the parent container
 bindsym $mod+a focus parent
-
-# custom bindysm
-bindsym $mod+p exec pcmanfm
-bindsym $mod+f exec firefox
-bindsym $mod+d exec discord
-bindsym $mod+b exec bitwig
 
 # focus the child container
 #bindsym $mod+d focus child
