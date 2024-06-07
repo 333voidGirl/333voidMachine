@@ -1,0 +1,8 @@
+#!/bin/sh
+
+#xclip keyboard
+cpbd () {
+	xclip -selection clipboard -t image/png -i $f
+}
+
+cpbd

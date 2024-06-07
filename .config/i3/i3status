@@ -7,7 +7,14 @@ general {
   separator = "|"
 }
 
+order += "volume master"
 order += "tztime local"
+
+volume master {
+        format = "♪: %volume"
+        format_muted = "♪: muted (%volume)"
+        device = "default"
+}
 
 tztime local {
         format = "%A %D %r"

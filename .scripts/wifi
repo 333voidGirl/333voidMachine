@@ -1,0 +1,13 @@
+#lists wifi devices, type, state, and connection
+nmcli d
+
+#activates wifi
+nmcli r wifi on
+
+#lists wifi signals
+nmcli d wifi list
+
+#command to connect to wifi
+nmcli d wifi connect [wifi connection] password [password]
+
+(())

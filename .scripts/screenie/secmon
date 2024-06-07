@@ -1,0 +1,8 @@
+#!/bin/sh
+
+#Screenshot
+screenie () {
+	scrot -M 1 -e 'xclip -selection clipboard -t image/png -i $f' ~/Pictures/screenshots/%Y-%m-%d-%T-screenshot.png
+}
+
+screenie
