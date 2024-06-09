@@ -112,7 +112,7 @@ bindsym $mod+a focus parent
 # custom bindysm
 bindsym $mod+p exec pcmanfm
 bindsym $mod+f exec firefox
-bindsym $mod+d exec discord
+bindsym $mod+d exec vesktop
 bindsym $mod+b exec bitwig
 bindsym $mod+k exec keepassxc
 bindsym $mod+t exec qbittorrent
