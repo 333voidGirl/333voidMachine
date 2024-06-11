@@ -116,6 +116,9 @@ bindsym $mod+d exec vesktop
 bindsym $mod+b exec bitwig
 bindsym $mod+k exec keepassxc
 bindsym $mod+t exec qbittorrent
+bindsym $mod+y exec kitty yazi
+# bindsym $mod+l exec lmms #if using this don't forget 2 change the focus parent to use mod shift a
+# bindsym $mod+a exec audacity
 
 # focus the child container
 #bindsym $mod+d focus child
