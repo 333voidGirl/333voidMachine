@@ -52,10 +52,10 @@ tiling_drag modifier titlebar
 bindsym $mod+Return exec kitty
 
 # kill focused window
-bindsym $mod+q kill
+bindsym $mod+BackSpace kill
 
 # start dmenu (a program launcher)
-bindsym $mod+s exec dmenu_run -nb '#000000' -nf '#f20587' -sf '#000000' -sb '#9000ff' -fn 'IBM3270-10px'
+bindsym $mod+s exec dmenu_run -nb '#000000' -nf '#f77e00' -sf '#000000' -sb '#f77e00' -fn 'IBM3270-11px'
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
@@ -109,17 +109,6 @@ bindsym $mod+space focus mode_toggle
 # focus the parent container
 bindsym $mod+a focus parent
 
-# custom bindysm
-bindsym $mod+p exec pcmanfm
-bindsym $mod+f exec firefox
-bindsym $mod+d exec vesktop
-bindsym $mod+b exec bitwig
-bindsym $mod+k exec keepassxc
-bindsym $mod+t exec qbittorrent
-bindsym $mod+y exec kitty yazi
-# bindsym $mod+l exec lmms #if using this don't forget 2 change the focus parent to use mod shift a
-# bindsym $mod+a exec audacity
-
 # focus the child container
 #bindsym $mod+d focus child
 
@@ -165,7 +154,29 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+q exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Shift+BackSpace exec "i3-nagbar -f 'pango:IBM 3270 Medium 12' -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3?' -B 'Y' 'i3-msg exit'"
+
+# custom bindysm
+bindsym $mod+p exec pcmanfm
+bindsym $mod+f exec firefox-developer-edition
+bindsym $mod+d exec vesktop
+bindsym $mod+b exec bitwig
+bindsym $mod+k exec keepassxc
+bindsym $mod+q exec qbittorrent
+bindsym $mod+o exec obs
+bindsym $mod+y exec kitty yazi
+bindsym Print exec sh ~/.scripts/screenie/scr0 
+bindsym $mod+Print exec sh ~/.scripts/screenie/scr1
+bindsym Shift+Print exec sh ~/.scripts/screenie/scr
+bindsym $mod+Shift+Print exec kitty sh ~/.scripts/screenie/ss
+#bindsym Scroll_Lock
+#bindsym Pause
+#bindsym Insert
+#bindsym Home
+#bindsym Piror
+#bindsym Delete
+#bindsym End
+#bindsym Next
 
 # resize window (you can also use the mouse for that)
 mode "resize" {

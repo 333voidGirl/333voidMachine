@@ -11,10 +11,10 @@ PS1="\[\033[31m\]\w\033[0m\]$ "
 # aliases
 # screenshots
 alias scr="sh ~/.scripts/screenie/scr"
-alias scr0="sh ~/.scripts/screenie/mainmon"
-alias scr1="sh ~/.scripts/screenie/secmon"
-alias scra="sh ~/.scripts/screenie/actwin"
-alias ss="sh ~/.scripts/screenie/sel"
+alias scr0="sh ~/.scripts/screenie/scr0"
+alias scr1="sh ~/.scripts/screenie/scr1"
+alias scra="sh ~/.scripts/screenie/scra"
+alias ss="sh ~/.scripts/screenie/ss"
 # cli
 alias ht="htop"
 alias bt="btop"
@@ -31,6 +31,7 @@ function yz() {
 	rm -f -- "$tmp"
 }
 alias yzm="yz /mnt/meow/mediaETC"
+alias wc="weechat"
 # gui
 alias pc="pcmanfm"
 # system
