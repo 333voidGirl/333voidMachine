@@ -1,14 +1,35 @@
 general {
   colors = true
-  color_good = "#9000ff"
-  color_degraded = "#d15cff"
-  color_bad = "#ff7e00"
+  color_good = "#a3ff00"
+  color_degraded = "#ff7e00"
+  color_bad = "#0000ff"
   interval = 1
   separator = "|"
 }
 
+order += "disk /"
+order += "disk /mnt/meow"
+order += "path_exists VPN"
+order += "wireless wlp4s0"
 order += "volume master"
 order += "tztime local"
+
+disk "/" {
+        format = "/: %avail/%total"
+}
+
+disk "/mnt/meow" {
+	format = "/mnt/meow: %avail/%total"
+}
+
+path_exists VPN {
+        path = "/var/run/NetworkManager/system-connections/wg-mullvad.nmconnection"
+}
+
+wireless wlp4s0 {
+        format_up = "W: %quality at %bitrate"
+        format_down = "W: down"
+}
 
 volume master {
         format = "♪: %volume"
@@ -17,5 +38,5 @@ volume master {
 }
 
 tztime local {
-        format = "%A %D %r"
+        format = "%A %Y/%m/%d (%b) %H:%M:%S %Z (%I:%M %p)"
 }
