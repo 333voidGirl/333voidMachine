@@ -1,3 +1,0 @@
-require("user.prefs")
-require("config.lazy")
-vim.cmd "colorscheme n1l"

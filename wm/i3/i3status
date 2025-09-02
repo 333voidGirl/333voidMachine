@@ -4,7 +4,7 @@ general {
   color_degraded = "#ff7e00"
   color_bad = "#0000ff"
   interval = 1
-  separator = "|"
+  separator = "::"
 }
 
 order += "disk /"
@@ -23,7 +23,7 @@ disk "/mnt/meow" {
 }
 
 path_exists VPN {
-        path = "/var/run/NetworkManager/system-connections/wg-mullvad.nmconnection"
+        path = "/var/run/NetworkManager/system-connections/wg0-mullvad.nmconnection"
 }
 
 wireless wlp4s0 {
